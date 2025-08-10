@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfólio de Wanderson Oliveira - Desenvolvedor Web em formação" />
+  <title>Portfólio | Wanderson Oliveira</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="limite header-flex">
+      <h1>Wanderson Oliveira</h1>
+      <nav class="menu-navegacao">
+        <ul>
+          <li><a href="#Habilidades">Minhas Habilidades</a></li>
+          <li><a href="#objetivo">Objetivo</a></li>
+          <li><a href="#containerCarrossel">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Modo Noturno -->
+  <section id="containerModoNoturno">
+    <h2>Modo Noturno</h2>
+    <button id="botaoModoNoturno">Modo Noturno</button>
+  </section>
+
+  <!-- Seção Perfil -->
+  <section class="perfil">
+    <img src="img/perfil.webp" alt="Foto de Wanderson Oliveira" class="perfil-img" loading="lazy" width="200" height="200" />
+    <h2>Olá, eu sou Wanderson dos Santos Silva Oliveira</h2>
+  </section>
+
+  <!-- Seção Sobre Mim -->
+  <section id="sobre-mim" class="sobre-mim">
+    <img src="img/sobre mim 1.webp" alt="Sobre Mim" class="sobre-mim-img" loading="lazy" width="400" height="300" />
+    <div class="titulo-centralizado">
+      <h3>SOBRE MIM</h3>
+    </div>
+    <p>Sou Wanderson tenho 34 anos, atualmente sou acadêmico de Análise e Desenvolvimento de Sistemas e estou fazendo um curso de Cybersegurança pelo Google/CIEE via Coursera. Trabalho com serviços de assistência técnica em computadores, notebooks e smartphones e também sou motoentregador autônomo.</p>
+  </section>
+
+  <!-- Minhas Habilidades -->
+  <section id="Habilidades" class="habilidades">
+    <div class="titulo-centralizado">
+      <h3>MINHAS HABILIDADES</h3>
+    </div>
+
+    <div class="habilidades-flex">
+      <div class="caixa-habilidade">
+        <img src="img/hardskills .webp" alt="Habilidades Técnicas" />
+        <h4 onclick="toggleConteudo('tecnicas', this)">Habilidades Técnicas <span class="seta">&#9660;</span></h4>
+        <div id="tecnicas" class="conteudo-fechado">
+          <ul>
+            <li>HTML e CSS para criação de páginas web</li>
+            <li>Desenvolvimento web e lógica de programação</li>
+            <li>Noções básicas de redes e segurança da informação</li>
+            <li>Manutenção de PCs, notebooks e smartphones</li>
+            <li>Instalação de sistemas e softwares</li>
+            <li>Diagnóstico e solução de problemas</li>
+            <li>Ferramentas digitais para organização</li>
+            <li>Entregas urbanas com geolocalização</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="caixa-habilidade">
+        <img src="img/softskill.webp" alt="Habilidades Pessoais" />
+        <h4 onclick="toggleConteudo('pessoais', this)">Habilidades Pessoais <span class="seta">&#9660;</span></h4>
+        <div id="pessoais" class="conteudo-fechado">
+          <ul>
+            <li>Comunicativo</li>
+            <li>Responsabilidade e autonomia</li>
+            <li>Proatividade técnica e logística</li>
+            <li>Organização e gestão do tempo</li>
+            <li>Adaptação a novas tecnologias</li>
+            <li>Foco em aprendizado contínuo</li>
+            <li>Comprometimento com prazos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Objetivo -->
+  <section id="objetivo" class="meu-objetivo">
+    <img src="img/meu objetivo.webp" alt="Meu Objetivo" />
+    <div class="titulo-centralizado">
+      <h3>MEU OBJETIVO</h3>
+    </div>
+    <p>Desejo me tornar um <strong>programador Fullstack</strong> altamente qualificado, focado em criar soluções completas e eficientes para web.</p>
+    <p>Busco uma carreira sólida em <em>desenvolvimento de software, automação</em> e tecnologias modernas, sempre aprendendo e evoluindo para contribuir com o sucesso das empresas.</p>
+  </section>
+
+  <!-- Seção Carrossel de Projetos -->
+  <section id="containerCarrossel">
+    <div class="titulo-centralizado">
+  <h3>MEUS PROJETOS</h3>
+  </div>
+  <p><strong>Aqui os visitantes podem ter acesso aos meus projetos desenvolvidos, projetos em construção e futuros projetos.</p></strong>
+  <div class="carrosselImagens">
+    <div class="slideCarrossel">
+      
+      <a href="https://github.com/wsolivera/PROJETOS/tree/main/PROJETO%20ESCOLA%201" loading="lazy" target="_blank" class="carrossel-item">
+        <img src="img/imagem_carrossel.webp" alt="Projeto desenvolvido em aula" loading="lazy" width="300" height="200" />
+        <div class="titulo-carrossel">PROJETO DESENVOLVIDO EM AULA</div>
+      </a>
+      
+      <a href="https://github.com/wsolivera/Projeto-Portifolio" loading="lazy" target="_blank" class="carrossel-item">
+        <img src="img/imagem_carrossel_1.webp" alt="Projeto site portifolio em construção" loading="lazy" width="300" height="200"/>
+        <div class="titulo-carrossel">PROJETO SITE PORTIFÓLIO <br>em construção</div>
+      </a>
+      
+      <a href="#" class="carrossel-item">
+        <img src="img/imagem_carrossel_futuros.webp" alt="Projetos futuros" loading="lazy" width="300" height="200" />
+        <div class="titulo-carrossel">PROJETOS FUTUROS</div>
+      </a>
+      
+    </div>
+    <button class="voltaCarrossel"><</button>
+    <button class="avancaCarrossel">></button>
+  </div>
+</section>
+
+
+  <!-- Rodapé -->
+  <footer id="contato">
+    <div class="limite">
+      <p class="rodape-contato">Entre em contato:</p>
+      <p>
+        <a href="https://wa.me/5567991645384" target="_blank" class="social-icon">
+          <img src="img/icone-whatsapp.webp" alt="WhatsApp" width="24" height="24" />
+          WhatsApp
+        </a>
+      </p>
+      <p>
+        <a href="mailto:wand_oliveiraa@hotmail.com" class="social-icon">
+          <img src="img/icone-email.webp" alt="Email" width="24" height="24" />
+          Email
+        </a>
+      </p>
+      <p>
+        <a href="https://www.instagram.com/olivera_wand" target="_blank" class="social-icon">
+          <img src="img/icone-instagram.webp" alt="Instagram" width="24" height="24" />
+          Instagram
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/wandersonoliveira8417" target="_blank" class="social-icon" aria-label="Ver GitHub de Wanderson (abre em nova aba)">
+          <img src="img/github-icon.webp" alt="GitHub" width="24" height="24" />
+          GitHub
+        </a>
+      </p>
+      <p class="rodape-copy">&copy; 2025 Wanderson Oliveira. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
